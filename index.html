@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Penilaian Akademik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="app-header">
+            <h1>Sistem Penilaian Akademik</h1>
+            <p>Tugas Pemrograman Web - Perulangan & Percabangan</p>
+            <p>Nama : Mochamad Firman Sholehudin NIM : 25534061</p>
+        </header>
+
+        <section class="card">
+            <h2>Input Data Nilai</h2>
+            <div class="form-group">
+                <label for="inputNilai">Masukkan Nilai Mahasiswa (Pisahkan dengan koma):</label>
+                <input type="text" id="inputNilai" placeholder="Contoh: 85, 92, 67, 45, 78">
+            </div>
+            <button id="btnProses" onclick="prosesNilai()">Proses & Evaluasi Nilai</button>
+        </section>
+
+        <section class="card result-card hidden" id="resultCard">
+            <h2>Hasil Evaluasi Nilai</h2>
+            <table class="result-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nilai Angka</th>
+                        <th>Grade (Huruf)</th>
+                        <th>Kategori / Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data dari JS akan dimasukkan di sini -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
